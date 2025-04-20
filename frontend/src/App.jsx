@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Login from './assets/components/Login'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    hi
+    <Login/>
       </>
   )
 }
