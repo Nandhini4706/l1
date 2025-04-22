@@ -1,13 +1,12 @@
 import React from 'react'
-import Login from './assets/components/Login'
-
+import List from './assets/page/List'
 
 function App() {
   
 
   return (
     <>
-    <Login/>
+    <List/>
   
       </>
   )
