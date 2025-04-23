@@ -11,8 +11,10 @@ const Login = () => {
                className='text-white border-1 rounded-xl text-center hover:bg-gray-800'  />
     
                <button className='border-1 border-amber-50 rounded-xl w-[150px] text-amber-50 hover:bg-gray-900'>Login</button>
-          
+                
            </div>
+          
+          
     </div>
     </div>
   )

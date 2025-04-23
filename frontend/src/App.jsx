@@ -1,12 +1,12 @@
 import React from 'react'
-import List from './assets/page/List'
+import Search from './assets/page/Search'
 
 function App() {
   
 
   return (
     <>
-    <List/>
+    <Search/>
   
       </>
   )
