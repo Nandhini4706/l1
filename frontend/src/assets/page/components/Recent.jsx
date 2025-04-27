@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function List() {
+export default function Recent() {
   return (
     <div className='w-full h-screen bg-gray-900 pt-5 pl-5 flex-row'>
      
