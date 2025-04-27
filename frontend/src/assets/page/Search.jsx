@@ -1,6 +1,22 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Box from './components/Box';
 export default function List() {
+
+  const dummyData = [
+    { id: 1, name: "Alice Smith", email: "alice@example.com", age: 28 },
+    { id: 2, name: "Bob Johnson", email: "bob@example.com", age: 34 },
+    { id: 3, name: "Carol Williams", email: "carol@example.com", age: 25 },
+    { id: 4, name: "David Brown", email: "david@example.com", age: 30 },
+    { id: 5, name: "Eve Davis", email: "eve@example.com", age: 22 },
+    { id: 6, name: "Frank Miller", email: "frank@example.com", age: 41 },
+    { id: 7, name: "Grace Wilson", email: "grace@example.com", age: 27 },
+    { id: 8, name: "Henry Moore", email: "henry@example.com", age: 36 },
+    { id: 9, name: "Ivy Taylor", email: "ivy@example.com", age: 29 },
+    { id: 10, name: "Jack Anderson", email: "jack@example.com", age: 33 }
+  ];
+  
+
   return (
 
     <div className='w-full h-screen bg-gray-950'>
@@ -20,14 +36,13 @@ export default function List() {
        <button className='border-1 border-pink-700 rounded-xl w-[90px] text-white hover:shadow-pink-300 shadow-sm hover:bg-gray-900 '>RECENT</button>
        </Link>
      </div>
-      <div className='w-[250px] h-[300px] bg-white rounded-xl m-[30px] border-1 border-yellow-500'>
-        <div className=' w-[250px] pt-65 pr-2 flex gap-2 justify-end'>
-        <button className='text-white font-medium border-1 border-red-900 bg-red-700 rounded-xl w-[60px]'>Delete</button>
-        <button className='border-1 border-green-950 w-[40px] rounded-xl bg-green-600 text-white font-medium'>Edit</button>
-        </div>
-
-      </div>
-      <div>
+      
+      <div className='w-screen h-auto bg-gray-950'>
+        {
+            dummyData.map((item,index)=>{
+            return   <Box item={item} index={index}/>
+            })
+        }
         
       </div>
     </div>

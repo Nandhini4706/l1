@@ -10,7 +10,7 @@ const home = () => {
                 <input type="text" placeholder='Patient name' className='w-[200px] border-1 border-pink-300 rounded-lg text-center text-white hover:bg-gradient-to-r from-pink-700 to-gray-700'/>
 
                 <input type="age" placeholder='Age/Gender' className='w-[200px] border-1 border-pink-300 rounded-lg text-center text-white hover:bg-gradient-to-r from-pink-700 to-gray-700' />
-                <input type="date" placeholder='' className='w-[200px] border-1 border-pink-300 rounded-lg text-center text-white hover:bg-gray-900 hover:text-pink-700' />
+                <input type="date" placeholder='DATE' className=' w-[200px] border-1 border-pink-300 rounded-lg text-center text-white hover:bg-gray-900 hover:text-pink-700' />
                 <input type="contact" placeholder='Contact Number' className='w-[200px] border-1 border-white rounded-lg text-center text-white hover:bg-gradient-to-r from-pink-700 to-gray-700' />
                 <input type="address" placeholder='Address' className='w-[200px] border-1 border-pink-300 rounded-lg text-center text-white hover:bg-gradient-to-r from-pink-700 to-gray-700' />
                 <input type="text" placeholder='Patient condition' className='w-[200px] border-1 border-pink-300 rounded-lg text-center text-white hover:bg-gradient-to-r from-blue-700 to-gray-700' />
