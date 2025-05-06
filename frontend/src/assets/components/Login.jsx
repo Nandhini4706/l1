@@ -1,6 +1,19 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-const Login = () => {
+import React,{useState} from 'react'
+import {Link, useNavigate} from 'react-router-dom'
+function Login(){
+const [userId , setUserId] =useState('');
+const navigate =useNavigate();
+
+const handleLogin = () => {
+  if(userId=='nandhu@gmail.com'){
+    localStorage.setItem('isLoggedIn','true');
+  
+    navigate('/home');
+  }else{
+    alert('Invalid credentials');
+  }
+};
+
   return (
     <>
     
@@ -9,11 +22,12 @@ const Login = () => {
          
          <div className='flex justify-center flex-col items-center gap-4 w-[300px] h-[300px]'> 
              
-                <input type="Email" placeholder='Enter Email Id'
+                <input type="Email" placeholder='Enter Email Id' value={userId}
+                onChange={(e) => setUserId(e.target.value)}
                className='text-white border-1 rounded-xl text-center hover:bg-gray-800'  />
-    <Link to='/home'>
-               <button className='border-1 border-amber-50 rounded-xl w-[150px] text-amber-50 hover:bg-gray-900'>Login</button>
-              </Link>
+    
+               <button onClick={handleLogin} className='border-1 border-amber-50 rounded-xl w-[150px] text-amber-50 hover:bg-gray-900'>Login</button>
+         
            </div>
           
           
@@ -22,5 +36,4 @@ const Login = () => {
 </>  
   )
 }
-
 export default Login
